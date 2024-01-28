@@ -14,7 +14,7 @@ public class DanMain extends JavaPlugin {
 
     public static DanMain INSTANCE;
 
-    public static final ItemStack COMPASS = itemStackHelper.buildItemstack(new ItemStack(Material.COMPASS,1),"Clique ta mere", new ArrayList<>(Arrays.asList("Si tu clique pas ta mere"," c'est une pute")));
+    public static final ItemStack COMPASS = itemStackHelper.buildItemstack(new ItemStack(Material.COMPASS,1),"Selection de serveur", new ArrayList<>(Arrays.asList("Ligne 1"," ligne 2")));
 
     public void onEnable() {
         getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");

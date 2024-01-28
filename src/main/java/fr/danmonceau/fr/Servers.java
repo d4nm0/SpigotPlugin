@@ -9,8 +9,8 @@ import java.util.Collections;
 
 public enum Servers {
 
-    Create("PanKiCraft",new ItemStack(Material.COMPASS),"Serveur creatif", new ArrayList<>(Collections.singletonList("test crea"))),
-    Survie("PanKiCreate",new ItemStack(Material.IRON_PICKAXE),"Serveur survie", new ArrayList<>(Collections.singletonList("test survie")));
+    Create("PanKiCreate",new ItemStack(Material.COMPASS),"Serveur creatif", new ArrayList<>(Collections.singletonList("test crea"))),
+    Survie("PanKiCraft",new ItemStack(Material.IRON_PICKAXE),"Serveur survie", new ArrayList<>(Collections.singletonList("test survie")));
     private final String bungeeName;
     private final ItemStack is;
     private final String displayName;
