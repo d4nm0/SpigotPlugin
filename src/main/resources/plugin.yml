@@ -1,0 +1,4 @@
+name: DanPlugin
+main: fr.danmonceau.fr.DanMain
+version: 1.0
+api-version: 1.20
