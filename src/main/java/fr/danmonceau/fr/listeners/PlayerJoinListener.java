@@ -22,7 +22,7 @@ public class PlayerJoinListener implements Listener {
                     if (itemStack.hasItemMeta()) {
 
                         if (itemStack.getItemMeta().getDisplayName().equals(DanMain.COMPASS.getItemMeta().getDisplayName())){
-                            System.out.println("found");
+                            //System.out.println("found");
                             return;
                         }
                     }
