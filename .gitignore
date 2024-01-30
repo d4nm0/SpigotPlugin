@@ -43,3 +43,6 @@ bin/
 .DS_Store
 /server/crash-reports
 /server/logs
+/server/world
+/server/world_nether
+/server/world_the_end
