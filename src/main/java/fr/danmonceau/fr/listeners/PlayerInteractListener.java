@@ -18,8 +18,9 @@ public class PlayerInteractListener implements Listener {
     public void onPlayerInteract (PlayerInteractEvent event) {
         final Player player = event.getPlayer();
         final Action action = event.getAction();
+        System.out.println(action);
         final ItemStack is = player.getInventory().getItemInMainHand();
-        if (action == Action.RIGHT_CLICK_AIR || action == Action.RIGHT_CLICK_BLOCK) {
+        if (  action == Action.RIGHT_CLICK_AIR || action == Action.RIGHT_CLICK_BLOCK) {
             if (player.getInventory().getItemInMainHand().getType().equals(DanMain.COMPASS.getType())) {
                 if (is.hasItemMeta()) {
                     if (is.getItemMeta().getDisplayName().equals(DanMain.COMPASS.getItemMeta().getDisplayName())){

@@ -1,5 +1,6 @@
 package fr.danmonceau.fr;
 
+import fr.danmonceau.fr.listeners.DropItemListener;
 import fr.danmonceau.fr.listeners.InventoryClickListener;
 import fr.danmonceau.fr.listeners.PlayerInteractListener;
 import fr.danmonceau.fr.listeners.PlayerJoinListener;
@@ -14,7 +15,7 @@ public class DanMain extends JavaPlugin {
 
     public static DanMain INSTANCE;
 
-    public static final ItemStack COMPASS = itemStackHelper.buildItemstack(new ItemStack(Material.COMPASS,1),"Choisir son serveur", new ArrayList<>(Arrays.asList("Cliquez pour"," voir les serveurs")));
+    public static final ItemStack COMPASS = itemStackHelper.buildItemstack(new ItemStack(Material.COMPASS,1),"Choisie ton serveur", new ArrayList<>(Arrays.asList("§2PanKiCraft","§4PanKiCreate ")));
 
     public void onEnable() {
         getServer().getMessenger().registerOutgoingPluginChannel(this, "BungeeCord");
@@ -24,6 +25,7 @@ public class DanMain extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerInteractListener(), this);
 
         getServer().getPluginManager().registerEvents(new InventoryClickListener(), this);
+        getServer().getPluginManager().registerEvents(new DropItemListener(), this);
         System.out.println("Plugin Activate");
     }
 

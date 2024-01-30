@@ -31,6 +31,6 @@ public class PlayerJoinListener implements Listener {
 
         }
 
-        inventory.addItem(DanMain.COMPASS);
+        inventory.setItem(4,DanMain.COMPASS);
     }
 }
