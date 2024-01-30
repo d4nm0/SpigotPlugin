@@ -23,7 +23,7 @@ public class PlayerInteractListener implements Listener {
             if (player.getInventory().getItemInMainHand().getType().equals(DanMain.COMPASS.getType())) {
                 if (is.hasItemMeta()) {
                     if (is.getItemMeta().getDisplayName().equals(DanMain.COMPASS.getItemMeta().getDisplayName())){
-                        final Inventory menu = Bukkit.createInventory(player, InventoryType.CHEST, "Menu du serveur");
+                        final Inventory menu = Bukkit.createInventory(player, InventoryType.CHEST, "Liste des serveurs");
 
                         for(Servers servers : Servers.values()) {
                             menu.addItem(itemStackHelper.buildItemstack(servers.getIs(), servers.getDisplayName(), servers.getDescription()));
