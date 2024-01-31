@@ -9,8 +9,10 @@ import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.inventory.ItemStack;
 
 public class DropItemListener implements Listener {
+
     @EventHandler
     public void onPlayerDropItem(PlayerDropItemEvent event) {
+        //System.out.println("onPlayerDropItem");
         ItemStack droppedItem = event.getItemDrop().getItemStack();
         if (droppedItem.getType().equals(DanMain.COMPASS.getType())) {
             event.setCancelled(true); // Annule le drop de l'item si c'est un compas

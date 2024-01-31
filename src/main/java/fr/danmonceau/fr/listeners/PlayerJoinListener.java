@@ -12,6 +12,8 @@ public class PlayerJoinListener implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
+
+        //System.out.println("onPlayerJoin");
         final Player player = event.getPlayer();
         final Inventory inventory = player.getInventory();
         final ItemStack[] itemStacks = inventory.getContents();
@@ -22,6 +24,7 @@ public class PlayerJoinListener implements Listener {
                     if (itemStack.hasItemMeta()) {
 
                         if (itemStack.getItemMeta().getDisplayName().equals(DanMain.COMPASS.getItemMeta().getDisplayName())){
+                            //System.out.println(player.getGameMode());
                             //System.out.println("found");
                             return;
                         }
